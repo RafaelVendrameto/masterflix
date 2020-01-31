@@ -11,13 +11,8 @@
 <body>
     <div>
         <h2>Livros Cadastrados: </h2>
-        <div th:each="filme : ${filmes}">
             <div>
-                <p>Nome:
-                    <a th:href="@{'/filme' + ${filme.nome}}">
-                        <span th:text="${filme.nome}"></span>
-                    </a>
-                </p>
+                <p>Nome: <span th:text="${filme.nome}"></span></p>
                 <img th:src="${filme.imagem}" width="25%">
                 <p>Sinopse: <span th:text="${filme.sinopse}"></span></p>
                 <p>Gênero: <span th:text="${filme.genero}"></span></p>
