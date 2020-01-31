@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Masterflix</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastre Aqui Seu Filme: </h1>
+    </div>
+    <div>
+        <form method="POST" action="/respostaCadastro">
+            <label>Nome: <input type="text" placeholder="Nome" name="nome"></label>
+            <label>Link da Imagem: <input type="text" placeholder="Link da Imagem" name="imagem"></label>
+            <label>Gênero: <input type="text" placeholder="Gênero" name="genero"></label>
+            <label>Duração: <input type="text" placeholder="Duração" name="duracao"></label>
+            <label>Sinopse: <textarea name="sinopse"></textarea></label>
+            <label>Data de Lançamento: <input type="date" name="dataLancamento"></label>
+            <button>Cadastrar</button>
+        </form>
+    </div>
+
+    <a href="/">Voltar</a>
+</body>
+</html>

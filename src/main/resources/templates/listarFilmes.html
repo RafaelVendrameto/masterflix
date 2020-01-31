@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Masterflix</title>
+</head>
+<body>
+    <div>
+        <h2>Livros Cadastrados: </h2>
+        <div th:each="filme : ${filmes}">
+            <div>
+                <p>Nome: <span th:text="${filme.nome}"></span></p>
+                <img th:src="${filme.imagem}" width="25%">
+                <p>Sinopse: <span th:text="${filme.sinopse}"></span></p>
+                <p>Gênero: <span th:text="${filme.genero}"></span></p>
+                <p>Data de Lançamento: <span th:text="${filme.dataLancamento}"></span></p>
+                <p>Duração: <span th:text="${filme.duracao}"></span></p>
+                <hr>
+            </div>
+        </div>
+
+        <a href="/">Voltar</a>
+    </div>
+</body>
+</html>
