@@ -13,7 +13,7 @@ public class Filme {
     private long id;
     @Column (length = 255)
     private String nome;
-    @Column
+    @Column (columnDefinition = "text")
     private String sinopse;
     @Column
     private String imagem;

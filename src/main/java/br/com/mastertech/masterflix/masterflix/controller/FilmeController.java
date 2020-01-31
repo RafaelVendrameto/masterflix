@@ -65,4 +65,11 @@ public class FilmeController {
             return "index";
         }
     }
+
+    @GetMapping("/delete{id}")
+    public String excluir(@PathVariable("id") long id, Model model){
+        filmeService.excluirFilme(id);
+        model.addAttribute("msg", "O seu filme foi excluido.");
+        return "listarFilme";
+    }
 }

@@ -23,7 +23,9 @@
                 <p>Gênero: <span th:text="${filme.genero}"></span></p>
                 <p>Data de Lançamento: <span th:text="${filme.dataLancamento}"></span></p>
                 <p>Duração: <span th:text="${filme.duracao}"></span></p>
+                <a th:href="@{'/deletar' + ${filme.id}}">Excluir</a>
                 <hr>
+                <p th:text="${msg}"></p>
             </div>
         </div>
 
